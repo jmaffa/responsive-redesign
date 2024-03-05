@@ -1,0 +1,108 @@
+/* CSS RESET FROM https://www.joshwcomeau.com/css/custom-css-reset/*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* MY CSS */
+body {
+    background: #FDEBAB;
+    font-family: 'Inter';
+}
+.navbar{
+    background: #F38B02;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+.navbar-logo img {
+    width: 70px; /* Adjust width as needed */
+    height: auto; /* Ensures image aspect ratio is maintained */
+    padding: 10px;
+}
+.navbar-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-items li {
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    padding-left: 20px; 
+    padding-right: 20px;
+    
+}
+.hamburger {
+    display: none;
+}
+.logo-caption{
+    font-family: "Verdana";
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-items {
+      display: none; /* Hide the navigation items */
+    }
+    
+    .hamburger {
+      display: block; 
+      background: none; 
+      border: none; 
+      cursor: pointer; 
+      width: 60px;
+      height: auto;
+    }
+  }
+  
