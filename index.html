@@ -3,55 +3,92 @@
 <html lang="en">
   <head>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oscar's Burritos (RR)</title>
-    <!-- import CSS styles -->
     <link rel="stylesheet" href="styles.css" /> 
   </head>
   <body>
-    <nav class="navbar">
+    <nav id="navbar">
         <div class="navbar-logo">
             <a href="#"><img src="images/logo.png" alt="Oscar's Burritos Logo" /></a>
             <span class="logo-caption">Oscar's Burritos</span>
         </div>
-        <a><img class="hamburger" src="images/hamburger.png" alt="Compressed Menu"/></a>
+        <a><img id="hamburger" src="images/hamburger.png" alt="Compressed Menu"/></a>
         <ul class="navbar-items">
             <li><a href="#">Press</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Menu</a></li>
         </ul>
     </nav>
-    <!-- LANDING -->
-    <div class="landing">
-        <!-- IMAGE AND CAPTION -->
-        <figure class="photo-container">
-            <img src="images/burrito.png" alt="Steak burrito" />
-            <figcaption class="caption">Steak burrito</figcaption>
-        </figure>
-        <div class="landing-button-container">
-            <button class="main-button">Menu</button>
-            <img class="pepper" src="images/pepper.png" alt="pepper-icon"/>
-            <button class="main-button">Call to Order</button>
-        </div>
+    <!-- HEADER -->
+    <div id="header">
+        <h1>Welcome to Oscar's Burritos!</h1>
+        <hr/>
+        <h2>When planning your perfect day, look no further than our signature burritos!</h2>
+        <h2 id="oscar-header">From Oscar's heart to yours.</h2>
     </div>
-        <!-- BUTTON CONTAINER -->
-        
-    </div>
-    <!-- ADDRESS / MENU -->
-    <div>
-
-    </div>
-    <!-- MEET OSCAR -->
-    <div>
-
+    <!-- IMPORTANT INFO -->
+    <div id="menu-and-call-container">
+        <button class="main-button">Menu</button>
+        <img class="pepper" src="images/pepper.png" alt="pepper-icon"/>
+        <button class="main-button">Call to Order</button>
     </div>
     <!-- GALLERY -->
-    <div>
-
+    <div id="gallery">
+        <figure id="photo-container">  
+            <img src="images/burrito.png" alt="Steak burrito" id="burrito"/>
+            <figcaption id="gallery-caption">
+                <p>Steak burrito</p>
+                <a id="arrows">&lt- -&gt</a>
+            </figcaption>
+        </figure>
     </div>
-    <!-- Footer -->
-    <footer>
+    <!-- ADDRESS / HOURS -->
+    <div id="cards-container">
+        <!-- ADDRESS CARD -->
+        <div class="card">
+            <h2>Address</h2>
+            <hr/>
+            <p>Oscar's Burritos Mexican Grill</p>
+            <p>34 Massachusetts Ave / Route 111</p>
+            <p>Boxborough, MA 01719</p>
+            <img class="pepper" src="images/pepper.png" alt="pepper-icon"/>
+        </div>
+        <!-- HOURS CARD -->
+        <div class="card">
+            <h2>Hours</h2>
+            <hr/>
+            <p><b>Monday-Saturday:</b> 11am - 8pm</p>
+            <p><b>Sunday:</b> Closed</p>
+            <p>Come visit us!</p>
+            <img class="pepper" src="images/pepper.png" alt="pepper-icon"/>
+        </div>
+    </div>
+    <!-- MEET OSCAR -->
+    <div id="meet-oscar-container">
+        <figure id="oscar-photo-container">
+            <img src="images/oscar.png" alt="Chef and Owner Oscar" id="oscar"/>
+            <figcaption id="oscar-caption">Chef and Owner Oscar</figcaption>
+        </figure>
+        <div id="oscar-text">
+            <h1>Meet Oscar</h1>
+            <p>Chef and owner Oscar Garcia, comes to Boxborough after 20 years of working on the Boston fine dining scene. The Guatamalan-born chef secured this Boxborough/Acton suburban location,  to build a professional kitchen where none existed. The barnlike structure with high ceilings and a casual concept shares spaces with an ice cream shop and sits in throwing distance to an ice rink.</p>
+            <p>Flavorful Mexican food that is fresh and homemade by Oscar, who is in the kitchen daily. Family-friendly, fast-casual Mexican, for a terrific value!</p>
+            <p id="oscar-quote">“Food is my passion - my art is creating a delicious and healthy Mexican grill menu that comforts and makes you want more and more!”</p>
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <footer >
+        <div class="navbar-logo">
+            <a href="#">Like us on Facebook!</a>
+            <a href="#"><img src="images/facebook.png"></img></a>
+        </div>
+        <div>
+            <p>Telephone: <a href="tel:978-266-0001">978-266-0001</a></p>
+        </div>
     </footer>
   </body>
 </html>

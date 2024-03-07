@@ -50,116 +50,244 @@
 body {
     background: #FDEBAB;
     font-family: 'Inter';
+    font-size: medium;
 }
-.navbar{
+#navbar{
     background: #F38B02;
     color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    font-size: 16px;
 }
 .navbar-logo {
     display: flex;
     align-items: center;
 }
 .navbar-logo img {
-    width: 70px; /* Adjust width as needed */
-    height: auto; /* Ensures image aspect ratio is maintained */
+    width: 70px;
+    height: auto;
     padding: 10px;
 }
 .navbar-items {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .navbar-items li {
     padding-top: 10px; 
     padding-bottom: 10px; 
-    padding-left: 20px; 
-    padding-right: 20px;
-    
+    padding-left: 30px; 
+    padding-right: 30px;
 }
-.hamburger {
+#hamburger {
     display: none;
 }
 .logo-caption{
-    font-family: "Verdana";
-    font-size: 1.2em;
+    font-size: 2em;
     padding: 10px;
 }
-.landing {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    padding: 20px;
+/* ELEMENT STYLING */
+.pepper {
+    width: auto;
+    height: 20%;
 }
-.photo-container {
-    position: relative;
-    max-width: 50vw;
-    margin-right: 20px;
+
+/* HEADER STYLING */
+#header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    font-size: 1.2em;
+}
+#header hr{
+    width: 50%;
+    border: 1px solid #4F7C1A;
+}
+#oscar-header{
+    font-family: "Caveat";
+    font-size: 1.5em;
+}
+
+/* MENU AND CALL STYLING */
+#menu-and-call-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
 }
 .main-button {
     background-color: #FF0000; 
-    width: 20vw;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
     color: white; 
-    padding: 35px 20px; 
+    width: 30vw;
+    padding: 10px;
     border: none;
-    border-radius: 5px; 
-    font-size: 16px; 
+    border-radius: 10px; 
     font-weight: bold;
     text-align: center; 
+    font-size: 1.8em;
     cursor: pointer; 
 }
-.landing-button-container {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+.main-button:hover {
+    background-color: #d00101; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.pepper {
-    width: auto;
+
+/* GALLERY */
+
+#gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+#photo-container {
+    position: relative;
+    max-width: 50vw;
+    width: 100%;
+}
+#burrito{
+    width: 100%;
     height: 100%;
 }
-/* 
-.landing {
+
+#gallery-caption {
     display: flex;
-    align-items: center; 
-    justify-content: center;
-    padding: 20px;
-} */
-/* .photo-container {
-    position: relative;
-    max-width: 100%; 
-    margin-right: 20px;
-} */
-
-/* .photo-container img {
-    max-width: 100%;
-    display: block; 
-} */
-
-.caption {
-    position: absolute;
-    bottom: 0; 
-    left: 0;
+    justify-content: space-between;
+    align-items: center;
     width: 100%; 
     background-color: #F38B02;
     color: white; 
     padding: 5px; 
     box-sizing: border-box; 
-    border-bottom: 4px solid #4F7C1A; 
+    border-bottom: 4px solid #4F7C1A;
+    font-size: 1.2em; 
+    font-weight: bold;
+}
+#arrows{
+    cursor: pointer;
+    font-size: 1.2em; 
 }
 
+/* CARDS */
+#cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #F38B02;
+    color: white;
+    border-radius: 10px;
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.card h2{
+    position:relative;
+    font-size: 1.5em;
+}
+.card hr{
+    width: 50%;
+    border: 2px solid #4F7C1A;
+}
+
+
+/* MEET OSCAR STYLING */
+#meet-oscar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+#oscar-photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    width: 30%;
+}
+#oscar{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+#oscar-caption {
+    width: 80%; 
+    background-color: #F38B02;
+    color: white; 
+    padding: 5px; 
+    border-bottom: 4px solid #4F7C1A;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+#oscar-text {
+    width: 60%;
+}
+#oscar-text p {
+    padding: 10px;
+    font-family: 'Comfortaa';
+}
+#oscar-quote {
+    font-family: 'Caveat';
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Footer styling */
+footer {
+    background-color: #F38B02; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align text */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  footer a {
+    color: #fff; 
+    text-decoration: none; 
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+/* TABLET STYLING */
 @media screen and (max-width: 768px) {
+    /* Adjust NavBar Styling */
     .navbar-items {
-      display: none; /* Hide the navigation items */
+      display: none; 
+    }
+    .logo-caption{
+        font-size: 1.8em;
+        padding: 10px;
     }
     
-    .hamburger {
+    #hamburger {
       display: block; 
       background: none; 
       border: none; 
@@ -167,5 +295,80 @@ body {
       width: 60px;
       height: auto;
     }
+    /* Adjust menu and call styling */
+    #menu-and-call-container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+    .main-button {
+      width: 60vw; 
+      margin: 15px;
+    }
+    /* Adjust cards styling */
+    #cards-container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+    .card {
+      width: 70%; 
+      margin: 10px; 
+    }
+
+    /* Adjust Meet Oscar */
+    #meet-oscar {
+      flex-direction: column; 
+      align-items: center; 
+    }
+    #oscar-photo-container {
+      width: 50%; 
+      margin: 10px; 
+    }
+    #oscar-text{
+        text-align: center;
+        width: 100%;
+    }
+    
   }
-  
+  @media screen and (max-width: 375px) {
+    .logo-caption{
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    #gallery{
+        margin:20px;
+        margin-bottom:50px;
+    }
+    #photo-container{
+        width: 50vw;
+        height: 50vw;
+    }
+    #gallery-caption{
+        font-size: 0.5em;
+    }
+    #arrows{
+        font-size: 0.8em;
+    }
+    #burrito{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+        width: 80%;
+        /* height: 150px; */
+        margin: 10px;
+        font-size: 0.9em;
+    }
+    #oscar-photo-container{
+        width: 100%;
+    }
+    #oscar-caption{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+  }
