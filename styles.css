@@ -83,6 +83,10 @@ body {
     padding-left: 30px; 
     padding-right: 30px;
 }
+.navbar-link {
+    text-decoration: none;
+    color: #000000;
+}
 #hamburger {
     display: none;
 }
