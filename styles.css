@@ -49,6 +49,7 @@
 /* MY CSS */
 body {
     background: #FDEBAB;
+    color:#000000;
     font-family: 'Inter';
     font-size: medium;
 }
@@ -94,6 +95,12 @@ body {
     width: auto;
     height: 20%;
 }
+a:visited{
+    color:#000000
+}
+a:hover{
+    color:#4F7C1A
+}
 
 /* HEADER */
 #header {
@@ -125,7 +132,7 @@ body {
 .main-button {
     background-color: #FF0000; 
     box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
-    color: white; 
+    color: black; 
     width: 30vw;
     padding: 10px;
     border: none;
@@ -163,7 +170,7 @@ body {
     align-items: center;
     width: 100%; 
     background-color: #F38B02;
-    color: white; 
+    color: black; 
     padding: 5px; 
     box-sizing: border-box; 
     border-bottom: 4px solid #4F7C1A;
@@ -193,7 +200,7 @@ body {
     padding: 20px;
     margin: 20px;
     background-color: #F38B02;
-    color: white;
+    color: black;
     border-radius: 10px;
     width: 40%;
     height: 200px;
@@ -233,7 +240,7 @@ body {
 #oscar-caption {
     width: 80%; 
     background-color: #F38B02;
-    color: white; 
+    color: black; 
     padding: 5px; 
     border-bottom: 4px solid #4F7C1A;
     text-align: center;
@@ -254,9 +261,9 @@ body {
 
 /* FOOTER */
 footer {
-    background-color: #F38B02; /* Background color */
-    color: #fff; /* Text color */
-    text-align: center; /* Center align text */
+    background-color: #F38B02; 
+    color: black;
+    text-align: center; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -267,7 +274,7 @@ footer {
   }
   
   footer a {
-    color: #fff; 
+    color: black; 
     text-decoration: none; 
   }
   
