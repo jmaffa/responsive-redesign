@@ -1,25 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- IMPORT FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oscar's Burritos (RR)</title>
     <link rel="stylesheet" href="styles.css" /> 
   </head>
   <body>
+    <!-- NAVBAR -->
     <nav id="navbar">
         <div class="navbar-logo">
-            <a href="#"><img src="images/logo.png" alt="Oscar's Burritos Logo" /></a>
+            <a aria-label="Logo to navigate home" href="#"><img src="images/logo.png" alt="Oscar's Burritos Logo" /></a>
             <span class="logo-caption">Oscar's Burritos</span>
         </div>
         <a><img id="hamburger" src="images/hamburger.png" alt="Compressed Menu"/></a>
         <ul class="navbar-items">
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a aria-label="Oscar's Burritos in the press" href="#">Press</a></li>
+            <li><a aria-label="Contact Oscar's Burritos" href="#">Contact</a></li>
+            <li><a aria-label="See Oscar's Burritos Menu" href="#">Menu</a></li>
         </ul>
     </nav>
     <!-- HEADER -->
@@ -29,19 +29,19 @@
         <h2>When planning your perfect day, look no further than our signature burritos!</h2>
         <h2 id="oscar-header">From Oscar's heart to yours.</h2>
     </div>
-    <!-- IMPORTANT INFO -->
+    <!-- MENU AND CALL BUTTONS -->
     <div id="menu-and-call-container">
-        <button class="main-button">Menu</button>
+        <button aria-label="See Oscar's Burritos Menu" class="main-button">Menu</button>
         <img class="pepper" src="images/pepper.png" alt="pepper-icon"/>
-        <button class="main-button">Call to Order</button>
+        <button aria-label="Call Oscar's Burritos to order" class="main-button">Call to Order</button>
     </div>
     <!-- GALLERY -->
     <div id="gallery">
         <figure id="photo-container">  
-            <img src="images/burrito.png" alt="Steak burrito" id="burrito"/>
+            <img aria-label="Steak burrito" src="images/burrito.png" alt="Steak burrito" id="burrito"/>
             <figcaption id="gallery-caption">
                 <p>Steak burrito</p>
-                <a id="arrows">&lt- -&gt</a>
+                <a href="#" aria-label="Left and right nav arrows" id="arrows">&lt- -&gt</a>
             </figcaption>
         </figure>
     </div>
@@ -69,18 +69,18 @@
     <!-- MEET OSCAR -->
     <div id="meet-oscar-container">
         <figure id="oscar-photo-container">
-            <img src="images/oscar.png" alt="Chef and Owner Oscar" id="oscar"/>
+            <img aria-label="Chef and Owner Oscar smiling" src="images/oscar.png" alt="Chef and Owner Oscar" id="oscar"/>
             <figcaption id="oscar-caption">Chef and Owner Oscar</figcaption>
         </figure>
         <div id="oscar-text">
-            <h1>Meet Oscar</h1>
+            <h1><u>Meet Oscar</u></h1>
             <p>Chef and owner Oscar Garcia, comes to Boxborough after 20 years of working on the Boston fine dining scene. The Guatamalan-born chef secured this Boxborough/Acton suburban location,  to build a professional kitchen where none existed. The barnlike structure with high ceilings and a casual concept shares spaces with an ice cream shop and sits in throwing distance to an ice rink.</p>
             <p>Flavorful Mexican food that is fresh and homemade by Oscar, who is in the kitchen daily. Family-friendly, fast-casual Mexican, for a terrific value!</p>
             <p id="oscar-quote">“Food is my passion - my art is creating a delicious and healthy Mexican grill menu that comforts and makes you want more and more!”</p>
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer >
         <div class="navbar-logo">
             <a href="#">Like us on Facebook!</a>
